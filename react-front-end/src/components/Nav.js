@@ -1,5 +1,5 @@
 import React from "react";
-import "./Nav.css";
+import "./Nav.scss";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
@@ -12,6 +12,11 @@ export default function Nav() {
 
       <div className="links">
         <ul>
+          <li>
+            <StyledNavLink to="/" className="nav-item">
+              Home
+            </StyledNavLink>
+          </li>
           <li>
             <StyledNavLink to="/about" className="nav-item">
               About
@@ -28,13 +33,8 @@ export default function Nav() {
             </StyledNavLink>
           </li>
           <li>
-            <StyledNavLink to="/login" className="nav-item login">
-              Login
-            </StyledNavLink>
-          </li>
-          <li>
             <StyledNavLink to="/signup" className="nav-item signup">
-              SignUp
+              Sign Up
             </StyledNavLink>
           </li>
         </ul>
@@ -44,12 +44,11 @@ export default function Nav() {
 }
 
 const StyledNavLink = styled(NavLink)`
-  text-emphasis: none;
+  // text-emphasis: none;
+  // text-decoration: none;
+  // &:hover {
+  //   text-emphasis: none;
   text-decoration: none;
   color: black;
-  &:hover {
-    text-emphasis: none;
-    text-decoration: none;
-    color: black;
-  }
+  // }
 `;

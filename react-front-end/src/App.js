@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import axios from 'axios';
-import './App.css';
+import React, { Component } from "react";
+import axios from "axios";
+import "./App.scss";
 import Nav from "./components/Nav";
 import {
   BrowserRouter as Router,
@@ -14,34 +14,35 @@ import MainPage from "./pages/main";
 import About from "./pages/about";
 import Search from "./pages/search";
 import Match from "./pages/match";
-import Login from './pages/login';
-import SignUp from './pages/signup';
+import Login from "./pages/login";
+import SignUp from "./pages/signup";
 
 class App extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      message: 'Click the button to load data!'
-    }
+      message: "Click the button to load data!",
+    };
   }
 
   fetchData = () => {
-    axios.get('/api/data') // You can simply make your requests to "/api/whatever you want"
-    .then((response) => {
-      // handle success
-      console.log(response.data) // The entire response from the Rails API
+    axios
+      .get("/api/data") // You can simply make your requests to "/api/whatever you want"
+      .then((response) => {
+        // handle success
+        console.log(response.data); // The entire response from the Rails API
 
-      console.log(response.data.message) // Just the message
-      this.setState({
-        message: response.data.message
+        console.log(response.data.message); // Just the message
+        this.setState({
+          message: response.data.message,
+        });
       });
-    }) 
-  }
+  };
 
   render() {
     return (
       <Router>
-        <Nav/>
+        <Nav />
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
           <Route path="/about" element={<About />}></Route>
@@ -49,7 +50,6 @@ class App extends Component {
           <Route path="/match" element={<Match />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<SignUp />}></Route>
-
         </Routes>
       </Router>
     );
