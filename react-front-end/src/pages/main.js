@@ -23,42 +23,6 @@ const MainPage = () => {
       <div className="hero-image-box">
         <div className="blob"></div>
       </div>
-
-      {/* <section className="recommended-books-section">
-        <div className="recommended-headerbox">
-          <h2 className="recommended-books-header">Recommended Books</h2>
-        </div>
-
-        <div className="recommended-books">
-          <div className="recommended-books-card">
-            <div className="card-details">
-              <span className="card-title">Avengers: End Game</span>
-              <span className="author">Salma Ibrahim</span>
-            </div>
-          </div>
-
-          <div className="recommended-books-card">
-            <div className="card-details">
-              <span className="card-title">Avengers: End Game</span>
-              <span className="author">Salma Ibrahim</span>
-            </div>
-          </div>
-
-          <div className="recommended-books-card">
-            <div className="card-details">
-              <span className="card-title">Avengers: End Game</span>
-              <span className="author">Salma Ibrahim</span>
-            </div>
-          </div>
-
-          <div className="recommended-books-card">
-            <div className="card-details">
-              <span className="card-title">Avengers: End Game</span>
-              <span className="author">Salma Ibrahim</span>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </section>
   );
 };
