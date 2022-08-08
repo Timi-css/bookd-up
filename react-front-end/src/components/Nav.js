@@ -37,6 +37,11 @@ export default function Nav() {
               Sign Up
             </StyledNavLink>
           </li>
+          <li>
+            <StyledNavLink to="/login" className="nav-item login">
+              Login
+            </StyledNavLink>
+          </li>
         </ul>
       </div>
     </nav>
