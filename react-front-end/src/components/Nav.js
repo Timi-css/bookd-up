@@ -28,8 +28,13 @@ export default function Nav() {
             </StyledNavLink>
           </li>
           <li>
-            <StyledNavLink to="/login" className="nav-item">
+            <StyledNavLink to="/login" className="nav-item login">
               Login
+            </StyledNavLink>
+          </li>
+          <li>
+            <StyledNavLink to="/signup" className="nav-item signup">
+              SignUp
             </StyledNavLink>
           </li>
         </ul>
